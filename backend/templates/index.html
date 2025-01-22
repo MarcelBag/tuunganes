@@ -6,17 +6,18 @@
     <title>Tuunganes Website</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/log.webp') }}">
-
-
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Tuunganes</a>
+            <a class="navbar-brand fw-bold text-primary" href="/">Tuunganes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,59 +35,76 @@
                             <li><a class="dropdown-item" href="/actions/tourism">Tourism</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.gofundme.com/f/gemeinsam-fur-eine-bessere-zukunft-unterstutzung-fur-waisen">Donations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/">Blog</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Hero Section -->
     <div class="container mt-4">
-        <div class="jumbotron bg-light p-4">
-            <h1 class="display-4">Welcome to Tuunganes</h1>
-            <p class="lead">Based in the Democratic Republic of Congo, Tuunganes is investing in the transformation of society, bringing comfort to vulnerable people and bringing smiles back to thousands of children and families traumatized by war.
-                We take a different approach by sharing our knowledge so that all can benefit, helping to create a society where opportunities are fairly shared</p>
-            <a class="btn btn-primary btn-lg" href="/actions" role="button">Learn More</a>
+        <div class="jumbotron p-4 bg-light shadow rounded">
+            <h1 class="display-4 fw-bold text-center text-primary">Welcome to Tuunganes</h1>
+            <p class="lead text-center">
+                Based in the Democratic Republic of Congo, Tuunganes is investing in the transformation of society, bringing comfort to vulnerable people and smiles to thousands of families traumatized by war.
+            </p>
+            <div class="text-center">
+                <a class="btn btn-primary btn-lg" href="/actions" role="button">Learn More</a>
+            </div>
         </div>
     </div>
+
+    <!-- Mission and Vision Section -->
     <div class="container mt-5">
-        <div class="row">
+        <div class="row g-4">
             <div class="col-md-6">
-                <h2>Mission</h2>
-                <p>Our mission is to make education accessible to all, by raising society's awareness of environmental, digital, and legal issues. 
-                    We promote a culture of interdisciplinary action research to encourage innovation and in-depth understanding of these fields, aiming to create a landscape where every population segment benefits from equal opportunities.</p>
+                <div class="p-4 bg-light shadow rounded">
+                    <h2 class="text-primary">Mission</h2>
+                    <p>
+                        Our mission is to make education accessible to all by raising society's awareness of environmental, digital, and legal issues. We promote a culture of interdisciplinary action research to encourage innovation and in-depth understanding of these fields, aiming to create a landscape where every population segment benefits from equal opportunities.
+                    </p>
+                </div>
             </div>
             <div class="col-md-6">
-                <h2>Vision</h2>
-                <p>
-                    Our vision at Tuunganes is to create a society where education is accessible to all, raising collective awareness about environmental, digital, and justice challenges. 
-                    We aspire to establish a culture of interdisciplinary action research on the environment and technology, thereby promoting innovation and an in-depth understanding of these emerging fields. 
-                    From this perspective, we envision a landscape where people and all social strata of the population have access to the same opportunities.</p>
+                <div class="p-4 bg-light shadow rounded">
+                    <h2 class="text-primary">Vision</h2>
+                    <p>
+                        Our vision is to create a society where education is accessible to all, raising collective awareness about environmental, digital, and justice challenges. We aspire to establish a culture of interdisciplinary action research on the environment and technology, thereby promoting innovation and in-depth understanding of these emerging fields. From this perspective, we envision a landscape where all social strata have access to the same opportunities.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Core Values Section -->
     <div class="container mt-5">
-        <div class="row">
-            <div class="jumbotron bg-light p-4">
-                <h2>Core values</h2>
-                <p>
-                    Inclusion and diversity: Promote digital access for all, without discrimination.
-                    Responsible innovation: Develop ethical and sustainable technological solutions.
-                    Sharing and Collaboration: Building inclusive and participatory solutions.
-                    Excellence and professionalism: Offer quality services and reliable expertise.
-                    Awareness and education: Inform the public about the various environmental impacts, such as pollution, deforestation, climate change, and loss of biodiversity.
-                    Develop educational programs for all ages on ecology, responsible consumption, and eco-responsible actions.
-                    Inclusion and diversity: Promote digital access for all, without discrimination.
-                    Responsible innovation: Develop ethical and sustainable technological solutions.
-                    Sharing and Collaboration: Building inclusive and participatory solutions.
-                    Excellence and professionalism: Offer quality services and reliable expertise.
-                    Awareness and education: Inform the public about the various environmental impacts, such as pollution, deforestation, climate change, and loss of biodiversity.
-                    Develop educational programs for all ages on ecology, responsible consumption, and eco-responsible actions.
-                </p>
-            </div>
+        <div class="p-4 bg-light shadow rounded">
+            <h2 class="text-center text-primary">Core Values</h2>
+            <ul class="list-unstyled">
+                <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-primary"></i> Inclusion and diversity: Promote digital access for all, without discrimination.
+                </li>
+                <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-primary"></i> Responsible innovation: Develop ethical and sustainable technological solutions.
+                </li>
+                <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-primary"></i> Sharing and Collaboration: Building inclusive and participatory solutions.
+                </li>
+                <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-primary"></i> Excellence and professionalism: Offer quality services and reliable expertise.
+                </li>
+                <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-primary"></i> Awareness and education: Inform the public about the various environmental impacts, such as pollution, deforestation, climate change, and loss of biodiversity.
+                </li>
+            </ul>
         </div>
     </div>
-    <footer class="bg-dark text-light py-4">
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
         <div class="container">
             <div class="row">
-                <!-- Subscription Form -->
                 <div class="col-md-4">
                     <h5>Subscribe to Our Newsletter</h5>
                     <form id="subscribeForm">
@@ -97,43 +115,25 @@
                         <button type="submit" class="btn btn-primary">Subscribe</button>
                     </form>
                 </div>
-                
-                <!-- Contact Information -->
                 <div class="col-md-4">
                     <h5>Contact Us</h5>
                     <p>Email: <a href="mailto:support@tuunganes.com" class="text-light">support@tuunganes.com</a></p>
                 </div>
-                
-                <!-- Social Media Links -->
                 <div class="col-md-4 text-center">
                     <h5>Follow Us</h5>
-                    <a href="https://facebook.com/tuunganes" target="_blank" class="text-light mx-2">
-                        <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
-                    </a>
-                    <a href="https://twitter.com/tuunganes" target="_blank" class="text-light mx-2">
-                        <i class="bi bi-twitter" style="font-size: 1.5rem;"></i>
-                    </a>
-                    <a href="https://instagram.com/tuunganes" target="_blank" class="text-light mx-2">
-                        <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
-                    </a>
-                    <a href="https://tiktok.com/@tuunganes" target="_blank" class="text-light mx-2">
-                        <i class="bi bi-tiktok" style="font-size: 1.5rem;"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/tuunganes" target="_blank" class="text-light mx-2">
-                        <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
-                    </a>
+                    <a href="https://facebook.com/tuunganes" target="_blank" class="text-light mx-2"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com/tuunganes" target="_blank" class="text-light mx-2"><i class="bi bi-twitter"></i></a>
+                    <a href="https://instagram.com/tuunganes" target="_blank" class="text-light mx-2"><i class="bi bi-instagram"></i></a>
+                    <a href="https://tiktok.com/@tuunganes" target="_blank" class="text-light mx-2"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://linkedin.com/company/tuunganes" target="_blank" class="text-light mx-2"><i class="bi bi-linkedin"></i></a>
                 </div>
             </div>
-            <hr class="bg-light">
-            <div class="text-center">
-                <p>&copy; 2025 Tuunganes. All Rights Reserved.</p>
-            </div>
+            <hr>
+            <p class="text-center">&copy; 2025 Tuunganes. All Rights Reserved.</p>
         </div>
     </footer>
-    
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 </html>
