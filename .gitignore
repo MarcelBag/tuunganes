@@ -1,0 +1,55 @@
+# Python-specific ignores
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+
+# Virtual environment
+venv/
+ENV/
+env/
+.env/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*~
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+*.out
+*.err
+
+# OS generated files
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Node.js (if used in the project)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Deployment files
+*.pid
+*.seed
+.env
+.env.*
+
+# Flask-specific
+instance/
+*.sqlite3
+*.db
+
+# Build artifacts
+build/
+dist/
+*.egg-info
