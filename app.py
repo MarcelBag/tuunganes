@@ -21,6 +21,12 @@ app.register_blueprint(subscription_bp)
 @app.route('/')
 def home():
     return render_template('index.html')
+@app.route('/actions/computer')
+def computer():
+    return render_template('IT.html')
+@app.route('/actions/computer/learn-more')
+def computer_learn_more():
+    return render_template('learnmoreit.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
