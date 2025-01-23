@@ -54,6 +54,66 @@
             </div>
         </div>
     </div>
+     <!-- Hero Section -->
+     <div class="container mt-4">
+        <div >
+            <p class="lead text-center">
+                Faced with persistent insecurity in the eastern Democratic Republic of Congo, Tuunganes is committed to providing long-term solutions by equipping young people and the vulnerable, in order to promote their autonomy. We work to help and support vulnerable populations, while actively contributing to changing behaviors, attitudes, and encouraging free action in the general interest. Our initiative also includes educational support for the most deprived, aimed at providing them with the necessary tools so that they can eventually become self-sufficient.
+            </p>
+        </div>
+    </div>
+       <!-- Hero Section with Photos -->
+<div class="container mt-4">
+    <div class="row align-items-center">
+        <!-- Left Image -->
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='images/agri.jpeg') }}" 
+                 class="img-fluid rounded mb-4" 
+                 alt="Agriculture 1"
+                 data-bs-toggle="modal" 
+                 data-bs-target="#imageModal1">
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='images/agri1.jpg') }}" 
+                 class="img-fluid rounded mb-4" 
+                 alt="Agriculture 2"
+                 data-bs-toggle="modal" 
+                 data-bs-target="#imageModal2">
+        </div>
+    </div>
+</div>
+
+    <!-- Modal for Left Image -->
+    <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal1Label">Lake Kivu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="{{ url_for('static', filename='images/agri.jpeg') }}" class="img-fluid" alt="Agriculture 1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Right Image -->
+    <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal2Label">Plain forest</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="{{ url_for('static', filename='images/agri1.jpg') }}" class="img-fluid" alt="Agriculture 2">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Mission and Vision Section -->
     <div class="container mt-5">

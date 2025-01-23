@@ -21,16 +21,22 @@ app.register_blueprint(subscription_bp)
 @app.route('/')
 def home():
     return render_template('index.html')
+
 @app.route('/actions/computer')
 def computer():
     return render_template('IT.html')
+
 @app.route('/actions/computer/learn-more')
 def computer_learn_more():
     return render_template('learnmoreit.html')
+
 @app.route('/actions/agriculture')
 def agriculture():
     return render_template('agriculture.html')
 
+@app.route('/actions/agriculture/learn-more')
+def agriculture_learn_more():  # Renamed this function to avoid the conflict
+    return render_template('learnmoreagri.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
