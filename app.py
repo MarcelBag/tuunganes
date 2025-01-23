@@ -27,6 +27,10 @@ def computer():
 @app.route('/actions/computer/learn-more')
 def computer_learn_more():
     return render_template('learnmoreit.html')
+@app.route('/actions/agriculture')
+def agriculture():
+    return render_template('agriculture.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

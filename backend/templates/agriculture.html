@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture - Tuunganes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/log.webp') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-primary" href="/">Tuunganes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Our Actions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/actions/agriculture">Agriculture</a></li>
+                            <li><a class="dropdown-item" href="/actions/computer">Computer</a></li>
+                            <li><a class="dropdown-item" href="/actions/legal-support">Legal Support</a></li>
+                            <li><a class="dropdown-item" href="/actions/tourism">Tourism</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.gofundme.com/f/gemeinsam-fur-eine-bessere-zukunft-unterstutzung-fur-waisen">Donations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro Section -->
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="p-4 bg-light shadow rounded">
+                    <h2 class="text-primary text-center">Agriculture in Eastern DRC</h2>
+                    <p>
+                        In the eastern regions of the Democratic Republic of Congo (DRC), the agri-food industry plays a crucial role in the local economy and the livelihood of populations. Despite the challenges posed by insecurity and conflict, agriculture remains a vital activity for many communities, providing not only livelihoods but also staples for daily food consumption.
+                    </p>
+                    <p>
+                        Eastern DRC is renowned for its fertile lands and climatic diversity, providing an environment conducive to a wide variety of crops. Food crops such as corn, cassava, rice, and vegetables are grown in this region, contributing to local food security. Additionally, commercial agriculture is also growing, with products such as coffee and tea finding their way into domestic and international markets.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section with Photos -->
+<div class="container mt-4">
+    <div class="row align-items-center">
+        <!-- Left Image -->
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='images/agri.jpeg') }}" 
+                 class="img-fluid rounded mb-4" 
+                 alt="Agriculture 1"
+                 data-bs-toggle="modal" 
+                 data-bs-target="#imageModal1">
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='images/agri1.jpg') }}" 
+                 class="img-fluid rounded mb-4" 
+                 alt="Agriculture 2"
+                 data-bs-toggle="modal" 
+                 data-bs-target="#imageModal2">
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Left Image -->
+<div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModal1Label">Lake Kivu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="{{ url_for('static', filename='images/agri.jpeg') }}" class="img-fluid" alt="Agriculture 1">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Right Image -->
+<div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModal2Label">Plain forest</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="{{ url_for('static', filename='images/agri1.jpg') }}" class="img-fluid" alt="Agriculture 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Challenges and Opportunities Section -->
+    <div class="container mt-4">
+        <div class="row g-4">
+            <!-- Left Column -->
+            <div class="col-md-6">
+                <div class="p-4 bg-light shadow rounded">
+                    <h3 class="text-primary">Challenges in Agriculture</h3>
+                    <p>
+                        Despite the region's considerable agricultural potential, many challenges persist. Political instability and armed conflicts have often disrupted agricultural activities, leading to population displacements, looting of crops, and destruction of infrastructure. Additionally, access to markets and agricultural inputs may be limited in remote areas, hindering the economic development of local farmers.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <div class="p-4 bg-light shadow rounded">
+                    <h3 class="text-primary">Opportunities in Agriculture</h3>
+                    <p>
+                        The agriculture industry in Eastern DRC remains a vital and promising sector, offering opportunities for economic growth and sustainable development for local communities. By investing in agriculture, improving infrastructure, and strengthening the technical capacities of farmers, it is possible to boost agricultural productivity and improve the living conditions of the populations of the Eastern region of the Democratic Republic of Congo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Learn More Button -->
+    <div class="container text-center mt-4">
+        <a href="/actions/agriculture/learn-more" class="btn btn-primary btn-lg">Learn More</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Subscribe to Our Newsletter</h5>
+                    <form id="subscribeForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: <a href="mailto:support@tuunganes.com" class="text-light">support@tuunganes.com</a></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Follow Us</h5>
+                    <a href="https://facebook.com/tuunganes" target="_blank" class="text-light mx-2"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com/tuunganes" target="_blank" class="text-light mx-2"><i class="bi bi-twitter"></i></a>
+                    <a href="https://instagram.com/tuunganes" target="_blank" class="text-light mx-2"><i class="bi bi-instagram"></i></a>
+                    <a href="https://tiktok.com/@tuunganes" target="_blank" class="text-light mx-2"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://linkedin.com/company/tuunganes" target="_blank" class="text-light mx-2"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2025 Tuunganes. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

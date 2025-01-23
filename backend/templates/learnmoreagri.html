@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More - Tuunganes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/log.webp') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-primary" href="/">Tuunganes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Our Actions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/actions/agriculture">Agriculture</a></li>
+                            <li><a class="dropdown-item" href="/actions/computer">Computer</a></li>
+                            <li><a class="dropdown-item" href="/actions/legal-support">Legal Support</a></li>
+                            <li><a class="dropdown-item" href="/actions/tourism">Tourism</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.gofundme.com/f/gemeinsam-fur-eine-bessere-zukunft-unterstutzung-fur-waisen">Donations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Detailed Information Section -->
+    <div class="container mt-4">
+        <!-- Title Section -->
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="p-4 bg-light shadow rounded text-center">
+                    <h2 class="text-primary">Why Computer Literacy Matters</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <div class="p-4 bg-light shadow rounded">
+                    <p>
+                        We strongly believe that computer literacy has the potential to be a valuable asset for individuals facing challenging circumstances. Once individuals acquire the necessary computer skills, they can access a multitude of opportunities to support themselves and their families, thereby significantly improving their quality of life.
+                        <br><br>
+                        Our initiative is dedicated to equipping young individuals with essential computer skills, empowering them to secure employment, provide for their families, and make meaningful contributions to their communities. Your contributions will offer immediate assistance while also laying the groundwork for sustained empowerment and progress.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Subscribe to Our Newsletter</h5>
+                    <form id="subscribeForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: <a href="mailto:support@tuunganes.com" class="text-light">support@tuunganes.com</a></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Follow Us</h5>
+                    <a href="https://facebook.com/tuunganes" target="_blank" class="text-light mx-2"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com/tuunganes" target="_blank" class="text-light mx-2"><i class="bi bi-twitter"></i></a>
+                    <a href="https://instagram.com/tuunganes" target="_blank" class="text-light mx-2"><i class="bi bi-instagram"></i></a>
+                    <a href="https://tiktok.com/@tuunganes" target="_blank" class="text-light mx-2"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://linkedin.com/company/tuunganes" target="_blank" class="text-light mx-2"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2025 Tuunganes. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
