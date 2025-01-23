@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuunganes Website</title>
+    <title>IT - Tuunganes</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -44,65 +44,38 @@
 
     <!-- Hero Section -->
     <div class="container mt-4">
-        <div class="jumbotron p-4 bg-light shadow rounded">
-            <h1 class="display-4 fw-bold text-center text-primary">Welcome to Tuunganes</h1>
-            <p class="lead text-center">
-                Based in the Democratic Republic of Congo, Tuunganes is investing in the transformation of society, bringing comfort to vulnerable people and smiles to thousands of families traumatized by war.
+        <div class="jumbotron bg-light p-4 shadow rounded">
+            <h1 class="display-5 text-primary">Empowering Communities Through IT</h1>
+            <p class="lead">
+                We provide computer skills and actively encourage our communities to take a greater interest in learning this essential discipline.
             </p>
             <div class="text-center">
-                <a class="btn btn-primary btn-lg" href="/actions" role="button">Learn More</a>
+                <button class="btn btn-primary btn-lg" id="learnMoreBtn">Learn More</button>
             </div>
         </div>
     </div>
 
-    <!-- Mission and Vision Section -->
-    <div class="container mt-5">
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="p-4 bg-light shadow rounded">
-                    <h2 class="text-primary">Mission</h2>
-                    <p>
-                        Our mission is to make education accessible to all by raising society's awareness of environmental, digital, and legal issues. We promote a culture of interdisciplinary action research to encourage innovation and in-depth understanding of these fields, aiming to create a landscape where every population segment benefits from equal opportunities.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="p-4 bg-light shadow rounded">
-                    <h2 class="text-primary">Vision</h2>
-                    <p>
-                        Our vision is to create a society where education is accessible to all, raising collective awareness about environmental, digital, and justice challenges. We aspire to establish a culture of interdisciplinary action research on the environment and technology, thereby promoting innovation and in-depth understanding of these emerging fields. From this perspective, we envision a landscape where all social strata have access to the same opportunities.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Core Values Section -->
-    <div class="container mt-5">
+    <!-- Additional Information Section -->
+    <div class="container mt-4 d-none" id="additionalInfo">
         <div class="p-4 bg-light shadow rounded">
-            <h2 class="text-center text-primary">Core Values</h2>
-            <ul class="list-unstyled">
-                <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-primary"></i> Inclusion and diversity: Promote digital access for all, without discrimination.
-                </li>
-                <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-primary"></i> Responsible innovation: Develop ethical and sustainable technological solutions.
-                </li>
-                <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-primary"></i> Sharing and Collaboration: Building inclusive and participatory solutions.
-                </li>
-                <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-primary"></i> Excellence and professionalism: Offer quality services and reliable expertise.
-                </li>
-                <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-primary"></i> Awareness and education: Inform the public about the various environmental impacts, such as pollution, deforestation, climate change, and loss of biodiversity.
-                </li>
-            </ul>
+            <h2 class="text-primary">Why Computer Literacy Matters</h2>
+            <p>
+                We strongly believe that computer literacy has the potential to be a valuable asset for individuals facing challenging circumstances. Once individuals acquire the necessary computer skills, they can access a multitude of opportunities to support themselves and their families, thereby significantly improving their quality of life.
+            </p>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-light py-4 mt-5">
+    <!-- Initiative Section -->
+    <div class="container mt-4">
+        <div class="p-4 bg-light shadow rounded">
+            <h2 class="text-primary">Our Initiative</h2>
+            <p>
+                Our initiative is dedicated to equipping young individuals with essential computer skills, empowering them to secure employment, provide for their families, and make meaningful contributions to their communities. Your contributions will offer immediate assistance while also laying the groundwork for sustained empowerment and progress.
+            </p>
+        </div>
+    </div>
+     <!-- Footer -->
+     <footer class="bg-dark text-light py-4 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -135,5 +108,12 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        document.getElementById('learnMoreBtn').addEventListener('click', function () {
+            const additionalInfo = document.getElementById('additionalInfo');
+            additionalInfo.classList.toggle('d-none');
+        });
+    </script>
 </body>
 </html>
