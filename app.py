@@ -38,5 +38,9 @@ def agriculture():
 def agriculture_learn_more():  # Renamed this function to avoid the conflict
     return render_template('learnmoreagri.html')
 
+@app.route('/actions')
+def actions():
+    return render_template('actions.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
