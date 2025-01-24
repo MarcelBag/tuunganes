@@ -1,7 +1,12 @@
-import requests
+import os
+from dotenv import load_dotenv
 
-DEEPSEEK_API_KEY = 'sk-fabfe8a0a75a471c87da675679c66ee2'
-DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/translate'
+# Load environment variables from .env file
+load_dotenv()
+
+# Get the API key and URL from environment variables
+DEEPSEEK_API_KEY = os.getenv('DEEPSEEK_API_KEY')
+DEEPSEEK_API_URL = os.getenv('DEEPSEEK_API_URL')
 
 def detect_language(text):
     headers = {
