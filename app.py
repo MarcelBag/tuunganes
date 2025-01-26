@@ -76,4 +76,4 @@ if __name__ == '__main__':
         print("Deepseek API key and URL loaded successfully.")
 
     # Run the Flask app
-    app.run(debug=True)
+    app.run(debug=False)
